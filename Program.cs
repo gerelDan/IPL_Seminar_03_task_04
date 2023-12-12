@@ -3,7 +3,7 @@
 //Создайте массив, состоящий из цифр этого числа.
 //Старший разряд числа должен располагаться на 0-м индексе массива,
 //младший – на последнем. Размер массива должен быть равен количеству цифр.
-int number = new Random().Next(1, 10_000);
+int number = new Random().Next(1, 100_000);
 Console.WriteLine($"Число: {number}");
 int[] result = new int[1];
 while (number/10 != 0)
@@ -16,7 +16,7 @@ result[result.Length-1] = number;
 Array.Reverse(result);
 Console.WriteLine($"Результат: [{string.Join(", ", result)}]");
 //Если реверс это тоже читерство то можно так:
-int number2 = new Random().Next(1, 10_000);
+int number2 = new Random().Next(1, 100_000);
 Console.WriteLine($"Число: {number2}");
 int[] resultSecond = new int[1];
 while (number2/10 != 0)
